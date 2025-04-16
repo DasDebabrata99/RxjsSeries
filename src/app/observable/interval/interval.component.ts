@@ -18,9 +18,9 @@ export class IntervalComponent implements OnInit {
     
     const subscriber = broadcaster.subscribe((res) =>{
       console.log(res);
-      this.designUtility.print(res, 'ul-container');
-      this.designUtility.print(res, 'ul-container2');
-      this.designUtility.print(res, 'ul-container3');
+      this.designUtility.print("Video "+res, 'ul-container');
+      this.designUtility.print("Video "+res, 'ul-container2');
+      this.designUtility.print("Video "+res, 'ul-container3');
       if(res > 10){
         subscriber.unsubscribe();
       }

@@ -7,9 +7,9 @@ export class DesignUtilityService {
 
   constructor() { }
 
-  print(value: number, container: string){
+  print(value: any, container: string){
     let liElement = document.createElement('li');
-    liElement.innerText = 'video' + value;
+    liElement.innerText = value;
     document.getElementById(container)?.appendChild(liElement);
    
 

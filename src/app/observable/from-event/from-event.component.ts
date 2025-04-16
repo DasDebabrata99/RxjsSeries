@@ -17,7 +17,7 @@ export class FromEventComponent implements AfterViewInit{
   ngAfterViewInit(){
     let clicks=0;
     fromEvent(this.addbutton.nativeElement,'click').subscribe(res =>{
-      this.designUtility.print(clicks++, 'ul-container');
+      this.designUtility.print("Video "+clicks++, 'ul-container');
     })
   }
 
