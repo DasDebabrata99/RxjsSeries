@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Custom Observable</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <p> Example 1: Manual </p>
+        
+            <ul [ngClass]="techStatus=='completed'?'completed':''" 
+            
+            id="techlist1" class="techlist"></ul>
+        </div>
+
+        <div class="col-md-3">
+            <p> Example 2: Interval </p>
+        
+            <ul [ngClass]="techStatus2=='completed'?'completed':''" 
+            
+            id="techlist2" class="techlist"></ul>
+        </div>
+    </div>
+</div>
